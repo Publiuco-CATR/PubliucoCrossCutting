@@ -3,7 +3,7 @@
   <groupId>co.edu.uco.publiuco</groupId>
   <artifactId>PubliucoCrossCutting</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>PubliuCrossCutting</name>
+  <name>PubliucoCrossCutting</name>
   <description>Componente utilizado para gestionar todas las funcionalidades/apis que pueden ser utilizadas de forma general por cualquier otro componente de Publiuco</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
