@@ -16,6 +16,14 @@ public final class UtilText {
 	public static final UtilText getUtilText(){
 		return INSTANCE;
 	}
+	
+	public static final String getDefaultIfEmpty(final String text, final String defaultValue) {
+		return isEmpty(text) ? getDefault(defaultValue) : text;
+	}
+	
+	public final static boolean isEmpty(final String text) {
+		return  applyTrim(text) == EMPTY;
+	}
 
 	public static final boolean isNull(final String text) {
 		return UtilObject.isNull(text);
