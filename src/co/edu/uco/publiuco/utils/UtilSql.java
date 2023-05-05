@@ -16,10 +16,50 @@ public final class UtilSql {
 		super();
 	}
 	
+	public static final void beginTransaction(Connection connection) {
+		if (connectionIsOpen(connection)) {
+			try {
+				connection.setAutoCommit(false);
+			} catch (SQLException exception) {
+				var userMessage = UtilSqlMessages.BEGIN_TRANSACTION_USER_MESSAGE;
+				var technicalMessage = UtilSqlMessages.BEGIN_TRANSACTION_TECHNICAL_MESSAGE;
+				
+				throw PubliucoCrossCuttingException.create(technicalMessage, userMessage, exception);
+			}
+		}
+	}
+	
+	public static final void confirmTransaction(Connection connection) {
+		if (connectionIsOpen(connection)) {
+			try {
+				connection.commit();
+			} catch (SQLException exception) {
+				var userMessage = UtilSqlMessages.CONFIRM_TRANSACTION_USER_MESSAGE;
+				var technicalMessage = UtilSqlMessages.CONFIRM_TRANSACTION_TECHNICAL_MESSAGE;
+				
+				throw PubliucoCrossCuttingException.create(technicalMessage, userMessage, exception);
+			}
+		}
+	}
+	
+	public static final void cancelTransaction(Connection connection) {
+		if (connectionIsOpen(connection)) {
+			try {
+				connection.rollback();
+			} catch (SQLException exception) {
+				var userMessage = UtilSqlMessages.CANCEL_TRANSACTION_USER_MESSAGE;
+				var technicalMessage = UtilSqlMessages.CANCEL_TRANSACTION_TECHNICAL_MESSAGE;
+				
+				throw PubliucoCrossCuttingException.create(technicalMessage, userMessage, exception);
+			}
+		}
+	}
+	
 	public static final Connection openConnection(final String url, final String username, final String password) {
 		try {
-			Connection connection = DriverManager.getConnection(url, username, password);
-			return connection;
+			//Connection connection = DriverManager.getConnection(url, username, password);
+			//return connection;
+			return DriverManager.getConnection(url, username, password);
 		} catch (final SQLException exception) {
 			var userMessage = UtilSqlMessages.OPEN_CONNECTION_USER_MESSAGE;
 			var technicalMessage = UtilSqlMessages.OPEN_CONNECTION_TECHNICAL_MESSAGE;
