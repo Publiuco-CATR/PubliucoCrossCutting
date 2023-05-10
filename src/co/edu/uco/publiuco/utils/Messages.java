@@ -34,9 +34,7 @@ public class Messages {
 		public static final String INIT_TRANSACTION_TECHNICAL_MESSAGE = "Se ha presentado un error a la hora de ejectutar";
 		// JAVA SQLEXCEPTION
 		public static final String SQL_EXCEPTION_USER_MESSAGE = "Se ha presentado una excepción desconocida a la hora de ejecutar la tarea solicitada.  Por favor intente de nuevo y si el problema persiste contacte al administrador de la aplicación";
-		public static final String generateSqlExceptionTechnicalMessage(SQLException exception) {
-			return "Se ha presentado una excepción desconocida de tipo \"" + exception.toString() + "\" a la hora de ejecutar la tarea solicitada. Por favor valide la traza completa de la excepción presentada"; 
-		}
+		public static final String generateSqlExceptionTechnicalMessage = "Error";
 	}
 	
 	public static final class EstadoFacadeImplMessages{

@@ -33,7 +33,7 @@ public final class UtilSql {
 			}
 		} catch (SQLException exception) {
 			var userMessage = UtilSqlMessages.SQL_EXCEPTION_USER_MESSAGE;
-			var technicalMessage = UtilSqlMessages.generateSqlExceptionTechnicalMessage(exception);
+			var technicalMessage = UtilSqlMessages.generateSqlExceptionTechnicalMessage;
 			
 			throw PubliucoCrossCuttingException.create(technicalMessage, userMessage);	
 		}
@@ -65,7 +65,7 @@ public final class UtilSql {
 			}
 		} catch (SQLException exception) {
 			var userMessage = UtilSqlMessages.SQL_EXCEPTION_USER_MESSAGE;
-			var technicalMessage = UtilSqlMessages.generateSqlExceptionTechnicalMessage(exception);
+			var technicalMessage = UtilSqlMessages.generateSqlExceptionTechnicalMessage;
 			
 			throw PubliucoCrossCuttingException.create(technicalMessage, userMessage);	
 		}
@@ -97,7 +97,7 @@ public final class UtilSql {
 			}
 		} catch (SQLException exception) {
 			var userMessage = UtilSqlMessages.SQL_EXCEPTION_USER_MESSAGE;
-			var technicalMessage = UtilSqlMessages.generateSqlExceptionTechnicalMessage(exception);
+			var technicalMessage = UtilSqlMessages.generateSqlExceptionTechnicalMessage;
 			
 			throw PubliucoCrossCuttingException.create(technicalMessage, userMessage);	
 		}
