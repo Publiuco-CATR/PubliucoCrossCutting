@@ -69,9 +69,4 @@ public final class UtilText {
 	public static boolean emailIsvalid(final String emailAdress){
 		return isNull(emailAdress) ? false : getUtilText().matchPattern(emailAdress, EMAIL_RE);
 	}
-
-	public static void main(String[] args) {
-		System.out.println(emailIsvalid("tejadaramirezc@gmail.com"));
-	}
-
 }
