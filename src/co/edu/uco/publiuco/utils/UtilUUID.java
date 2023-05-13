@@ -31,4 +31,8 @@ public final class UtilUUID {
 	public static final UUID generateUUIDFromString(final String uuidValue) {
 		return (uuidStringIsValid(uuidValue)) ? UUID.fromString(uuidValue) : DEFAULT_UUID;
 	}
+	
+	public static final boolean isDefault(final UUID value) {
+		return getDefaultValue().equals(getDefault(value));
+	}
 }
