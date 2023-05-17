@@ -74,4 +74,8 @@ public final class UtilText {
 	public boolean textHasOnlyLetters(String text) {
 		return isNull(text) ? false : getUtilText().matchPattern(text, ONLY_LETTER_RE);
 	}
+	
+	public boolean textHasLenghtAllowed(String text, int minimunLenght, int maximunLengh) {
+		return isNull(text) ? false : (text.length() <= maximunLengh && text.length() >= minimunLenght);
+	}
 }
