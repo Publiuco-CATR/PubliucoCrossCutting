@@ -454,4 +454,71 @@ public class Messages {
 		public static final String TECHNICAL_MESSAGE_DROP = "Se ha presentado una excepcion no conocida al momento de eliminar la Version, por favor valide la traza completa de la excepcion presentada";
 
 	}
+	
+	public static final class TipoEstadoSql{
+		private TipoEstadoSql() {}
+		
+		public static final String USER_MESSAGE_CREATE = "Se ha presentado un problema tratando de registrar la informacion del nuevo Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_CREATE = "Se ha presentado un problema dentro del método create de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_CREATE_JAVA_EXCEPTION = "Se ha presentado un problema inesperado dentro del método create de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+		public static final String USER_MESSAGE_UPDATE = "Se ha presentado un problema tratando de modificar la informacion del Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_UPDATE = "Se ha presentado un problema dentro del método update de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_UPDATE_JAVA_EXCEPTION = "Se ha presentado un problema inesperado dentro del método update de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+		public static final String USER_MESSAGE_READ = "";
+		public static final String TECHNICAL_MESSAGE_READ = "";
+		public static final String TECHNICAL_MESSAGE_READ_JAVA_EXCEPTION = "";
+		public static final String USER_MESSAGE_DELETE = "Se ha presentado un problema tratando de eliminar la informacion del Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_DELETE = "Se ha presentado un problema dentro del método delete de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_DELETE_JAVA_EXCEPTION= "Se ha presentado un problema inesperado dentro del método delete de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+	}
+	
+	public static final class EstadoSql{
+		private EstadoSql() {}
+		
+		public static final String USER_MESSAGE_CREATE = "Se ha presentado un problema tratando de registrar la informacion del nuevo Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_CREATE = "Se ha presentado un problema dentro del método create de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_CREATE_JAVA_EXCEPTION = "Se ha presentado un problema inesperado dentro del método create de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+		public static final String USER_MESSAGE_UPDATE = "Se ha presentado un problema tratando de modificar la informacion del Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_UPDATE = "Se ha presentado un problema dentro del método update de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_UPDATE_JAVA_EXCEPTION = "Se ha presentado un problema inesperado dentro del método update de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+		public static final String USER_MESSAGE_READ = "";
+		public static final String TECHNICAL_MESSAGE_READ = "";
+		public static final String TECHNICAL_MESSAGE_READ_JAVA_EXCEPTION = "";
+		public static final String USER_MESSAGE_DELETE = "Se ha presentado un problema tratando de eliminar la informacion del Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_DELETE = "Se ha presentado un problema dentro del método delete de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_DELETE_JAVA_EXCEPTION= "Se ha presentado un problema inesperado dentro del método delete de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+	}
+	public static final class ComentarioSql{
+		private ComentarioSql() {}
+		
+		public static final String USER_MESSAGE_CREATE = "Se ha presentado un problema tratando de registrar la informacion del nuevo Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_CREATE = "Se ha presentado un problema dentro del método create de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_CREATE_JAVA_EXCEPTION = "Se ha presentado un problema inesperado dentro del método create de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+		public static final String USER_MESSAGE_UPDATE = "Se ha presentado un problema tratando de modificar la informacion del Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_UPDATE = "Se ha presentado un problema dentro del método update de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_UPDATE_JAVA_EXCEPTION = "Se ha presentado un problema inesperado dentro del método update de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+		public static final String USER_MESSAGE_READ = "";
+		public static final String TECHNICAL_MESSAGE_READ = "";
+		public static final String TECHNICAL_MESSAGE_READ_JAVA_EXCEPTION = "";
+		public static final String USER_MESSAGE_DELETE = "Se ha presentado un problema tratando de eliminar la informacion del Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_DELETE = "Se ha presentado un problema dentro del método delete de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_DELETE_JAVA_EXCEPTION= "Se ha presentado un problema inesperado dentro del método delete de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+	}
+	
+	public static final class CalificacionSql{
+		private CalificacionSql() {}
+		
+		public static final String USER_MESSAGE_CREATE = "Se ha presentado un problema tratando de registrar la informacion del nuevo Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_CREATE = "Se ha presentado un problema dentro del método create de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_CREATE_JAVA_EXCEPTION = "Se ha presentado un problema inesperado dentro del método create de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+		public static final String USER_MESSAGE_UPDATE = "Se ha presentado un problema tratando de modificar la informacion del Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_UPDATE = "Se ha presentado un problema dentro del método update de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_UPDATE_JAVA_EXCEPTION = "Se ha presentado un problema inesperado dentro del método update de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+		public static final String USER_MESSAGE_READ = "";
+		public static final String TECHNICAL_MESSAGE_READ = "";
+		public static final String TECHNICAL_MESSAGE_READ_JAVA_EXCEPTION = "";
+		public static final String USER_MESSAGE_DELETE = "Se ha presentado un problema tratando de eliminar la informacion del Tipo Estado";
+		public static final String TECHNICAL_MESSAGE_DELETE = "Se ha presentado un problema dentro del método delete de la clase TipoEstadoPostgreSqlDAO de tipo Sqlexception. Por favor verifique la traza completa del error.";
+		public static final String TECHNICAL_MESSAGE_DELETE_JAVA_EXCEPTION= "Se ha presentado un problema inesperado dentro del método delete de la clase TipoEstadoPostgreSqlDAO de tipo Exception. Por favor verifique la traza completa del error.";
+	}
 }
